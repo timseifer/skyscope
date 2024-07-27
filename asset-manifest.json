@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skyscope/static/css/main.ffcd06c6.css",
+    "main.js": "/skyscope/static/js/main.1a8581f1.js",
+    "static/js/453.8c4d3ba2.chunk.js": "/skyscope/static/js/453.8c4d3ba2.chunk.js",
+    "index.html": "/skyscope/index.html",
+    "main.ffcd06c6.css.map": "/skyscope/static/css/main.ffcd06c6.css.map",
+    "main.1a8581f1.js.map": "/skyscope/static/js/main.1a8581f1.js.map",
+    "453.8c4d3ba2.chunk.js.map": "/skyscope/static/js/453.8c4d3ba2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffcd06c6.css",
+    "static/js/main.1a8581f1.js"
+  ]
+}
