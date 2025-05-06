@@ -8,7 +8,7 @@ import ScrollIndicator from './ScrollIndicator';
 function App() {
   const videoRef = useRef(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
-
+  
   useEffect(() => {
     // Auto-play video when component mounts
     if (videoRef.current) {
@@ -18,11 +18,11 @@ function App() {
       });
     }
   }, []);
-
+  
   const handleVideoLoaded = () => {
     setVideoLoaded(true);
   };
-
+  
   return (
     <div style={{ backgroundColor: 'black' }}>
       {/* Hero section with video background */}
@@ -31,11 +31,11 @@ function App() {
         position: 'relative',
         overflow: 'hidden',
       }}>
-        {/* Video Background with cover fit */}
-        <div style={{
+        {/* Video Background with full width and height */}
+                 <div style={{
           position: 'absolute',
-          width: '100%',
-          height: '100%',
+          width: '100vw', // Full viewport width
+          height: '100vh', // Full viewport height
           top: 0,
           left: 0,
           zIndex: 1,
@@ -48,19 +48,18 @@ function App() {
             playsInline
             onLoadedData={handleVideoLoaded}
             style={{
-              width: '100%',
+              width: '100vw', 
               height: '100%',
-              objectFit: 'cover', // Changed to cover to fill the screen
+              objectFit: 'fill',
               opacity: 0.3,
               filter: 'brightness(0.4)',
-              transform: 'scale(1.1)', // Slightly scale up to avoid any small gaps
             }}
           >
-            <source src={`${process.env.PUBLIC_URL}/Assets/skyscope_demo.mp4`} type="video/mp4" />
+            <source src={`${process.env.PUBLIC_URL}/Assets/skyscope_small.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-
+        
         {/* 3D Canvas */}
         <Canvas
           style={{
@@ -83,7 +82,7 @@ function App() {
             enablePan={false}
           />
         </Canvas>
-
+        
         {/* Content overlays */}
         <div style={{
           position: 'absolute',
@@ -107,7 +106,7 @@ function App() {
             A first of its kind satellite tracking app
           </p>
         </div>
-
+        
         <div style={{
           position: 'absolute',
           bottom: '15%',
@@ -118,7 +117,7 @@ function App() {
           <ScrollIndicator />
         </div>
       </div>
-
+      
       <SimplifiedSection />
     </div>
   );
