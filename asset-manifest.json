@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/skyscope/static/css/main.ffcd06c6.css",
-    "main.js": "/skyscope/static/js/main.c52e3089.js",
+    "main.css": "/skyscope/static/css/main.dc2929a5.css",
+    "main.js": "/skyscope/static/js/main.0dd854a2.js",
     "static/js/453.8c4d3ba2.chunk.js": "/skyscope/static/js/453.8c4d3ba2.chunk.js",
     "index.html": "/skyscope/index.html",
-    "main.ffcd06c6.css.map": "/skyscope/static/css/main.ffcd06c6.css.map",
-    "main.c52e3089.js.map": "/skyscope/static/js/main.c52e3089.js.map",
+    "main.dc2929a5.css.map": "/skyscope/static/css/main.dc2929a5.css.map",
+    "main.0dd854a2.js.map": "/skyscope/static/js/main.0dd854a2.js.map",
     "453.8c4d3ba2.chunk.js.map": "/skyscope/static/js/453.8c4d3ba2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffcd06c6.css",
-    "static/js/main.c52e3089.js"
+    "static/css/main.dc2929a5.css",
+    "static/js/main.0dd854a2.js"
   ]
 }
